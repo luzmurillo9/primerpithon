@@ -1,0 +1,127 @@
+body {
+    padding-top: 20px;
+    background: #f5f7f8;
+  }
+  
+  .grid-1 {
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px auto auto 80px;
+    grid-gap: 10px;
+    
+    grid-template-areas: "header"
+                         "sidebar"
+                         "main"
+                         "footer"; 
+  }
+  
+  /* items */
+  
+  .grid-1 div {
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    }
+  
+  /* rwd */
+  
+  @media only screen and (min-width: 500px) {
+  
+      .grid-1 {
+      max-width: 800px;
+        
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px auto 150px;
+        grid-gap: 10px;
+        
+        grid-template-areas: "header   header   header"
+                             "sidebar   main     main"
+                             "footer   footer   footer";
+      }
+  
+      .grid-1 div {
+        font-size: 20px;
+        padding: 20px;
+       }
+  
+  }
+  
+  /* specific item styles */
+  
+  .item-1 {
+    background:rgb(30, 210, 120);
+    grid-area: header;
+    display:block;
+  }
+  .item-2 {
+    background: #a8336a;
+    grid-area: main;
+    
+    display: grid;
+    
+    grid-template-columns: 100%;
+    word-wrap: break-word;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    display:block;
+    
+    grid-template-areas: "header"
+                         "article"
+                         "sidebar";
+    
+  }
+  
+  /* rwd */
+  
+  @media only screen and (min-width: 600px) {
+  
+      .item-2 {
+        
+        grid-template-columns: 1fr 30%;
+        grid-template-rows: auto auto;
+        grid-gap: 30px;
+        display:block;
+        grid-template-areas: "header header"
+        "article sidebar";
+        
+        
+      }
+
+    }
+    .item-4 {
+      background: #409198;
+      grid-area: header;
+      display:block;
+      
+    }
+
+
+.item-5{
+  background:#fbff12 ;
+ grid-area: article;
+ display:block;
+}
+
+.item-7{
+    background:#2b3cda;
+    grid-area:sidebar ;
+    display:block;
+}
+.item-8{
+  grid-area: sidebar;
+  display:block
+}
+
+.item-3{
+background:#3db15a ;
+grid-area: footer;
+}
+
+.item-6{
+background:#773fe0 ;
+grid-area: sidebar;
+display:block;
+}
