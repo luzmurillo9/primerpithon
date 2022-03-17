@@ -52,12 +52,12 @@ body {
   /* specific item styles */
   
   .item-1 {
-    background:rgb(30, 210, 120);
+    background:rgb(212, 162, 241);
     grid-area: header;
     display:block;
   }
   .item-2 {
-    background: #a8336a;
+    background: #fc9fca;
     grid-area: main;
     
     display: grid;
@@ -92,7 +92,7 @@ body {
 
     }
     .item-4 {
-      background: #409198;
+      background: #afecf1;
       grid-area: header;
       display:block;
       
@@ -100,13 +100,13 @@ body {
 
 
 .item-5{
-  background:#fbff12 ;
+  background:#fa7e7e ;
  grid-area: article;
  display:block;
 }
 
 .item-7{
-    background:#2b3cda;
+    background:#90d7f3;
     grid-area:sidebar ;
     display:block;
 }
@@ -116,12 +116,12 @@ body {
 }
 
 .item-3{
-background:#3db15a ;
+background:#f39eec ;
 grid-area: footer;
 }
 
 .item-6{
-background:#773fe0 ;
+background:#d0acee ;
 grid-area: sidebar;
 display:block;
 }
